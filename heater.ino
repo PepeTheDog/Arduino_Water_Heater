@@ -64,8 +64,8 @@ void loop() {
     break;
     case end_heating:
       digitalWrite(relay, 0);
-      digitalWrite(green_led, 1);
-      blink_red();
+      digitalWrite(green_led, 0);
+      digitalWrite(red_led, 1);
     break;
   }
 }
